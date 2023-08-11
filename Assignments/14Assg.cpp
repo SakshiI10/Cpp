@@ -1,0 +1,1 @@
+//Write a C++ program to display prime numbers between two intervals using function.

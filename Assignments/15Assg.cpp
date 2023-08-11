@@ -1,0 +1,1 @@
+//Write a C++ program to check whether a number can be expressed as a sum of two prime numbers using functions.
