@@ -36,7 +36,7 @@ void Check(char str1[], char str2[])
 int main()
 {
     char str1[] = "sakshi";
-    char str2[] = "sakshii";
+    char str2[] = "sakshi";
     Check(str1, str2);
     return 0;
 }

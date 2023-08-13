@@ -1,3 +1,5 @@
+//Searching for characters and substring in a string.
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -27,21 +29,19 @@ void Char(char str[], char ch)
 void SubString(char str[], char substr[])
 {
     int StrLen = 0, i = 0;
-    while (str[i] != '\0')
+    while (str[StrLen] != '\0')
     {
         StrLen++;
-        i++;
     }
 
     int SubStrLen = 0, j = 0;
-    while (substr[j] != '\0')
+    while (substr[SubStrLen] != '\0')
     {
         SubStrLen++;
-        j++;
     }
 
     bool Found = false;
-    for (i = 0; i <= StrLen - SubStrLen; i++)
+    for (i = 0; i <= StrLen; i++)
     {
         for (j = 0; j < SubStrLen; j++)
         {
@@ -73,7 +73,7 @@ int main()
     cin.getline(str, 100);
     /* char ch = 'i';
     Char(str, ch); */
-    char substr[] = "shi";
+    char substr[] = "hi";
     SubString(str, substr);
     return 0;
 }

@@ -11,13 +11,13 @@ void SortStr(char str[])
     }
     for (int i = 0; i < length; i++)
     {
-        for (int j = 0; j < length-1; j++)
+        for (int j = i + 1; j < length; j++)
         {
-            if (str[j] > str[j + 1])
+            if (str[i] > str[j])
             {
                 char temp = str[j];
-                str[j] = str[j + 1];
-                str[j + 1] = temp;
+                str[j] = str[i];
+                str[i] = temp;
             }
         }
     }
@@ -26,26 +26,31 @@ void SortStr(char str[])
 void Freq(char str[])
 {
     SortStr(str);
-    for (int i = 0; str[i] != '\0'; i++)
+    int length = 0;
+    while (str[length] != '\0')
+    {
+        length++;
+    }
+    for (int i = 0; i < length; i++)
     {
         int count = 1, j = 0;
         bool Freq = false;
-
-        for (j = 0; j<i; j++)
+        for (j = 0; j < i; j++)
         {
             if (str[i] == str[j])
             {
-                Freq=true;
+                Freq = true;
                 break;
             }
         }
-        if(Freq){
+        if (Freq)
+        {
             continue;
         }
 
-        for (j = i + 1; str[j] != '\0'; j++)
+        for (j = i + 1; j < length; j++)
         {
-            if (str[j] == str[i])
+            if (str[i] == str[j])
             {
                 count++;
             }

@@ -12,17 +12,18 @@ void SortStr(char str[])
     }
     for (int i = 0; i < length; i++)
     {
-        for (int j = 0; j < length-1; j++)
+        for (int j = i + 1; j < length; j++)
         {
-            if (str[j] > str[j + 1])
+            if (str[i] > str[j])
             {
                 char temp = str[j];
-                str[j] = str[j + 1];
-                str[j + 1] = temp;
+                str[j] = str[i];
+                str[i] = temp;
             }
         }
     }
 }
+
 int main()
 {
     char str[100];
