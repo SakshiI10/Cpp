@@ -24,7 +24,7 @@ void checkPalindromeStream(char str[])
 
     for (int i = 0; i < 1; i++)
     {
-        for (int j = 1; j <= length - i; j++)
+        for (int j = 1; j <= length-i; j++)
         {
             for (int k = i; k < i + j; k++)
             {

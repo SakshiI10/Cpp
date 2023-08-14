@@ -1,4 +1,4 @@
-//Program to check palindrome in a string.
+// Program to check palindrome in a string.
 
 #include <iostream>
 using namespace std;
@@ -15,7 +15,7 @@ void Palindrome(char str[])
     {
         int start = 0;
         int end = length - 1;
-        if (str[start] == str[end])
+        if (str[start] += str[end])
         {
             start++;
             end--;
@@ -24,11 +24,11 @@ void Palindrome(char str[])
     }
     if (Check)
     {
-        cout << "String is a palindrome";
+        cout << str << " is a palindrome";
     }
     else
     {
-        cout << "String is not a palindrome";
+        cout << str << " is not a palindrome";
     }
 }
 int main()
