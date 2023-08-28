@@ -2,7 +2,7 @@
 using namespace std;
 
 // A function to print a vector:
-void Print(vector<string> v)
+void Print(vector<int> v)
 {
     cout << "Size of a vector: " << v.size() << endl;
     cout << "Vector: ";
@@ -29,13 +29,13 @@ int main()
         v.push_back(x);
     }
     Print(v); */
-
+    
     // Another way to declare a vector:
     /* vector<int> v(10);
     Print(v); */
 
-    /* vector<int> v(10, 3);
-    Print(v); */
+    vector<int> v(10, 3);
+    Print(v);
 
     /* vector<int> v(10, 3);
     v.push_back(7);
@@ -54,7 +54,7 @@ int main()
     Print(v);
     Print(v2); */
 
-    vector<string> v;
+    /* vector<string> v;
     cout << "Enter number of elements: ";
     int n;
     cin >> n;
@@ -66,5 +66,5 @@ int main()
         v.push_back(s);
     }
     Print(v);
-    return 0;
+    return 0; */
 }

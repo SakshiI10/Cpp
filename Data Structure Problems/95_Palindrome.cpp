@@ -15,7 +15,7 @@ void Palindrome(char str[])
     {
         int start = 0;
         int end = length - 1;
-        if (str[start] += str[end])
+        if (str[start] == str[end])
         {
             start++;
             end--;

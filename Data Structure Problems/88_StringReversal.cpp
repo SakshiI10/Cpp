@@ -1,14 +1,17 @@
-//Program to reverse a string.
+// Program to reverse a string.
 
 #include <iostream>
 using namespace std;
 
-void Reverse(char str[]){
-    int length=0;
-    while(str[length] != '\0'){
+void Reverse(char str[])
+{
+    int length = 0;
+    while (str[length] != '\0')
+    {
         length++;
     }
-    for(int i=length-1; i>=0; i--){
+    for (int i = length - 1; i >= 0; i--)
+    {
         cout << str[i];
     }
 }

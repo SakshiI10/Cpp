@@ -3,9 +3,11 @@
 #include <iostream>
 using namespace std;
 
-void RemoveChar(char str[], int index){
-    for(int i=index; str[i] != '\0'; i++){
-        str[i]=str[i+1];
+void RemoveChar(char str[], int index)
+{
+    for (int i = index; str[i] != '\0'; i++)
+    {
+        str[i] = str[i + 1];
     }
 }
 int main()
