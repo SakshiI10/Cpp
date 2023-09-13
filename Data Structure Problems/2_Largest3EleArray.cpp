@@ -3,16 +3,8 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void thirdlargest(int arr[100], int size)
 {
-    int arr[100], size, i;
-    cout << "Enter number of elements: ";
-    cin >> size;
-    cout << "Enter elements in an array: ";
-    for (i = 0; i < size; i++)
-    {
-        cin >> arr[i];
-    }
     int max1, max2, max3;
     max1 = max2 = max3 = arr[0];
     for (int i = 0; i < size; i++)
@@ -34,5 +26,17 @@ int main()
         }
     }
     cout << "Three largest elements are: " << max1 << " " << max2 << " " << max3;
+}
+int main()
+{
+    int arr[100], size, i;
+    cout << "Enter number of elements: ";
+    cin >> size;
+    cout << "Enter elements in an array: ";
+    for (i = 0; i < size; i++)
+    {
+        cin >> arr[i];
+    }
+    thirdlargest(arr, size);
     return 0;
 }
