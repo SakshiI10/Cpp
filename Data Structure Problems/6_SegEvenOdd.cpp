@@ -1,3 +1,5 @@
+//Segregate even and odd numbers of an array.
+
 #include <iostream>
 using namespace std;
 

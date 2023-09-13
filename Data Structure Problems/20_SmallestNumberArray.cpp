@@ -7,7 +7,8 @@ void SmallestNum(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        if(arr[i] != i){
+        if (arr[i] != i)
+        {
             cout << i;
         }
     }

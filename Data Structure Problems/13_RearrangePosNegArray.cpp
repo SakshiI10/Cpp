@@ -5,21 +5,21 @@ using namespace std;
 
 void Rearrange(int arr[], int size)
 {
-    int temp[100], j = 0;
+    int temp[100], k = 0;
     for (int i = 0; i < size; i++)
     {
         if (arr[i] < 0)
         {
-            temp[j] = arr[i];
-            j++;
+            temp[k] = arr[i];
+            k++;
         }
     }
     for (int i = 0; i < size; i++)
     {
         if (arr[i] > 0)
         {
-            temp[j] = arr[i];
-            j++;
+            temp[k] = arr[i];
+            k++;
         }
     }
     for (int j = 0; j < size; j++)

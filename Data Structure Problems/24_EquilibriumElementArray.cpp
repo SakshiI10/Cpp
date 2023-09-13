@@ -28,10 +28,10 @@ int main()
 {
     int arr[] = {-7, 1, 5, 2, -4, 3, 0};
     int size = sizeof(arr) / sizeof(arr[0]);
-    int index = eind(arr, size);
-    if (index != -1)
+    int element = eind(arr, size);
+    if (element != -1)
     {
-        cout << "Equilibrium Element: " << index << endl;
+        cout << "Equilibrium Element: " << element << endl;
     }
     else
     {
@@ -39,3 +39,5 @@ int main()
     }
     return 0;
 }
+
+//use int function so that it will return only one value when return function is used.

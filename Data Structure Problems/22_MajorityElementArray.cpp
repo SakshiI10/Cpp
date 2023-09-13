@@ -5,7 +5,7 @@ using namespace std;
 
 void Majority(int arr[], int size)
 {
-    int maxcount = 0, index = 0;
+    int majority = 0, index = 0;
     for (int i = 0; i < size; i++)
     {
         int count = 1;
@@ -16,14 +16,14 @@ void Majority(int arr[], int size)
                 count++;
             }
         }
-        if (maxcount < count)
+        if (majority < count)
         {
-            maxcount = count;
+            majority = count;
             index = i;
         }
     }
     cout << "Majority element is: " << arr[index] << endl;
-    cout << "It occurs: " << maxcount << " times" << endl;
+    cout << "It occurs: " << majority << " times" << endl;
 }
 int main()
 {

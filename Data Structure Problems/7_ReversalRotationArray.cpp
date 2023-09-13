@@ -1,3 +1,5 @@
+//Reversal algorithm for array rotation.
+
 #include <iostream>
 using namespace std;
 
