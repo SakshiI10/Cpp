@@ -1,3 +1,5 @@
+// Program to print all substring of a given string.
+
 #include <iostream>
 using namespace std;
 
@@ -10,7 +12,7 @@ void PrintSubstr(char str[])
     }
     for (int i = 0; i < length; i++)
     {
-        for (int j = 1; j <= length-i; j++)
+        for (int j = 1; j <= length - i; j++)
         {
             for (int k = i; k < i + j; k++)
             {

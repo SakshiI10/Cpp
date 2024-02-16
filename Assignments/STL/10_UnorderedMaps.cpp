@@ -3,7 +3,6 @@ using namespace std;
 
 void print(unordered_map<int, string> &m)
 {
-
     cout << "Size of map: " << m.size() << endl;
     for (auto &pr : m) // O(log(n))
     {

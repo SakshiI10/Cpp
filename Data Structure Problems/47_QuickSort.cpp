@@ -59,9 +59,8 @@ void quickSort(int A[], int low, int high)
 
 int main()
 {
-    int A[] = {9, 4, 4, 8, 7, 5, 6};
-    int n = 9;
-    n =7;
+    int A[] = {4, 8, 13, 21, 22, 40};
+    int n = 6;
     printArray(A, n);
     quickSort(A, 0, n - 1);
     printArray(A, n);

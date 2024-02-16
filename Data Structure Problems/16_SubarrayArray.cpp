@@ -8,11 +8,10 @@ void Subarray(int arr[], int size, int sum)
     int sub = 0;
     for (int i = 0; i < size; i++)
     {
-        while (sub < sum)
+        if (sub < sum)
         {
             sub = sub + arr[i];
-            cout << sub << " ";
-            i++;
+            cout << arr[i] << " ";
         }
     }
 }

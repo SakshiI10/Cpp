@@ -1,5 +1,4 @@
 // Print all subsequences of a string.
-//** perform again.
 
 #include <iostream>
 using namespace std;

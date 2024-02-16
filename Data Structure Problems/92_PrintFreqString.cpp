@@ -1,3 +1,5 @@
+//Print frequency of characters in a string.
+
 #include <iostream>
 #include <string>
 using namespace std;
