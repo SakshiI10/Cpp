@@ -1,5 +1,3 @@
-#include <vector>
-
 class Solution {
 public:
     void swapKth(int n, int k, std::vector<int> &arr) {
