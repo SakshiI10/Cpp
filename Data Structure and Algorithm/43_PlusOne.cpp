@@ -19,11 +19,9 @@ public:
                 // Carry over to the next digit
                 digits[i] %= 10;
             }
-        }
-        
+        }  
         // If there is still a carry after the loop, insert a new digit at the beginning
         digits.insert(digits.begin(), 1);
-        
         return digits;
     }
 };
