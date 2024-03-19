@@ -1,3 +1,5 @@
+// Write a function to check if all elements in the array are palindrome.
+
 class Solution {
 public:
     bool isPalindrome(int num) {
@@ -11,7 +13,6 @@ public:
     return originalNum == reversedNum;
 }
 
-// Function to check if all elements in the array are palindrome
 int PalinArray(int A[], int n) {
     for (int i = 0; i < n; i++) {
         if (!isPalindrome(A[i])) {
