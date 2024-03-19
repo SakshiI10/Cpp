@@ -37,7 +37,7 @@ Note:
 When a function is declared as a friend inside a class, it means that the function is granted access to the private and protected members of that class. However, this does not make the friend function a member of the class in the usual sense.
 */
 
-//Friend Function:
+//Friend Class:
 #include<iostream>
 #include<string>
 using namespace std;
