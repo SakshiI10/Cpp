@@ -1,16 +1,15 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include<algorithm>
 #include <string> 
+using namespace std;
 
 int num(int a[], int n, int k) {
     int totalCount = 0;
-
-    for (int num : std::vector<int>(a, a + n)) {
-        std::string numStr = std::to_string(num);
-        totalCount += std::count(numStr.begin(), numStr.end(), '0' + k);
+    for (int num : vector<int>(a, a + n)) {
+        string numStr = to_string(num);
+        totalCount += count(numStr.begin(), numStr.end(), '0' + k);
     }
-
     return totalCount;
 }
 
@@ -21,7 +20,7 @@ int main() {
 
     int result = num(A, n, k);
 
-    std::cout << "Output: " << result << std::endl;
+    cout << "Output: " << result << endl;
 
     return 0;
 }
