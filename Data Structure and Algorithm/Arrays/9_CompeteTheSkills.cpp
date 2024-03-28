@@ -1,21 +1,22 @@
-#include <vector>
 #include <iostream>
+#include <vector>
+using namespace std;
 
 class Solution
 {
 public:
     void scores(long long a[], long long b[], int ca, int cb)
     {
-        std::vector<long long> A(a, a + ca);
-        std::vector<long long> B(b, b + cb);
+        vector<long long> A(a, a + ca);
+        vector<long long> B(b, b + cb);
 
         int scoreA = 0, scoreB = 0;
 
         // Check if the size of A and B is the same
         if (A.size() != B.size())
         {
-            std::cerr << "Error: Arrays A and B must have the same size." << std::endl;
-            return; // You might want to handle this error more appropriately
+            cerr << "Error: Arrays A and B must have the same size." << endl;
+            return; 
         }
 
         for (int i = 0; i < A.size(); i++)
@@ -30,7 +31,7 @@ public:
             }
         }
 
-        std::cout << scoreA << " " << scoreB << std::endl;
+        cout << scoreA << " " << scoreB << endl;
     }
 };
 
