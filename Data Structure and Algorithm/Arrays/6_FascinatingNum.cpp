@@ -1,34 +1,32 @@
 #include <iostream>
 #include <unordered_set>
+#include <string>
 using namespace std;
 
 class Solution
 {
 public:
-    bool fascinating(int n)
+    int fascinating(int n)
     {
         if (n < 100 || n > 999)
         {
-            return false;
+            return -1;
         }
 
         int n2 = n * 2;
         int n3 = n * 3;
-
         string concatenatedStr = to_string(n) + to_string(n2) + to_string(n3);
 
         unordered_set<char> digitSet;
-
         for (char digit : concatenatedStr)
         {
             if (digit == '0' || digitSet.count(digit) > 0)
             {
-                return false;
+                return 0;
             }
             digitSet.insert(digit);
         }
-
-        return digitSet.size() == 9;
+        return 1;
     }
 };
 
