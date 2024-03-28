@@ -30,3 +30,4 @@ int main()
     cout << "The party is for: " << result << endl;
     return 0;
 }
+
