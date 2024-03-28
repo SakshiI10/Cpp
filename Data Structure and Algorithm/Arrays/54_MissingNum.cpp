@@ -2,21 +2,25 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    int missingNumber(int n, vector<int> &arr) {
-        int expectedSum = (n*(n+1))/2, actualSum=0;
-        
-        for(int i : arr){
-            actualSum = actualSum+i;
+    int missingNumber(int n, vector<int> &arr)
+    {
+        int expectedSum = (n * (n + 1)) / 2, actualSum = 0;
+
+        for (int i : arr)
+        {
+            actualSum = actualSum + i;
         }
-        
-        int difference = expectedSum-actualSum;
+
+        int difference = expectedSum - actualSum;
         return difference;
     }
 };
 
-int main() {
+int main()
+{
     Solution sol;
     vector<int> arr1 = {1, 4, 3};
     int n1 = 4;

@@ -25,9 +25,12 @@ int main()
     int n = arr.size(), k = 16;
 
     int result = sol.search(n, k, arr);
-    if(result==1){
+    if (result == 1)
+    {
         cout << result << endl;
-    } else {
+    }
+    else
+    {
         cout << result << endl;
     }
     return 0;
