@@ -2,17 +2,22 @@
 #include <string>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    bool check(string s) {
+    bool check(string s)
+    {
         int n = s.size();
-        
-        if (n == 0 || n == 1) {
+
+        if (n == 0 || n == 1)
+        {
             return true;
         }
-        
-        for (int i = 0; i < n - 1; i++) {
-            if (s[i] != s[i + 1]) {
+
+        for (int i = 0; i < n; i++)
+        {
+            if (s[i] != s[i + 1])
+            {
                 return false;
             }
         }
@@ -20,15 +25,19 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     Solution solution;
     string input;
     cout << "Enter a string: ";
     cin >> input;
 
-    if (solution.check(input)) {
+    if (solution.check(input))
+    {
         cout << "All characters in the string are same." << endl;
-    } else {
+    }
+    else
+    {
         cout << "String contains different characters." << endl;
     }
 

@@ -2,18 +2,22 @@
 #include <string>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    string chartostr(char arr[], int n) {
+    string chartostr(char arr[], int n)
+    {
         string result;
-        for (int i = 0; i < n; ++i) {
+        for (int i = 0; i < n; ++i)
+        {
             result += arr[i];
         }
         return result;
     }
 };
 
-int main() {
+int main()
+{
     Solution solution;
     int n;
     cout << "Enter the size of the character array: ";
@@ -21,7 +25,8 @@ int main() {
 
     char arr[n];
     cout << "Enter " << n << " characters: ";
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i)
+    {
         cin >> arr[i];
     }
 

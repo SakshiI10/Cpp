@@ -3,18 +3,22 @@
 #include <string>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    vector<char> strtochar(string str) {
+    vector<char> strtochar(string str)
+    {
         vector<char> charList;
-        for (char ch : str) {
+        for (char ch : str)
+        {
             charList.push_back(ch);
         }
         return charList;
     }
 };
 
-int main() {
+int main()
+{
     Solution solution;
     string inputString;
     cout << "Enter a string: ";
@@ -23,7 +27,8 @@ int main() {
     vector<char> result = solution.strtochar(inputString);
 
     cout << "Characters in the string: ";
-    for (char ch : result) {
+    for (char ch : result)
+    {
         cout << ch << " ";
     }
     cout << endl;

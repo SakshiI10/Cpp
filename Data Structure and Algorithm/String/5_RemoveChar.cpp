@@ -4,18 +4,16 @@
 #include <cctype> // Include for isdigit function
 using namespace std;
 
-class Solution {
-public:	
-    string removeCharacters(string S) 
+class Solution
+{
+public:
+    string removeCharacters(string S)
     {
-        vector<char> charList;
-        for (char ch : S) {
-            charList.push_back(ch);
-        }
-        
         string result;
-        for (char ch : charList) {
-            if (isdigit(ch)) {
+        for (char ch : S)
+        {
+            if (isdigit(ch))
+            {
                 result.push_back(ch);
             }
         }
@@ -23,16 +21,16 @@ public:
     }
 };
 
-/* 
+/*
 class Solution {
-public:	
-    vector<char> removeCharacters(string S) 
+public:
+    vector<char> removeCharacters(string S)
     {
         vector<char> charList;
         for (char ch : S) {
             charList.push_back(ch);
         }
-        
+
         vector<char> result;
         for (char ch : charList) {
             if (isdigit(ch)) {
@@ -44,15 +42,16 @@ public:
 };
  */
 
-int main() {
+int main()
+{
     Solution solution;
     string input;
-    
+
     cout << "Enter a string: ";
     cin >> input;
 
     string result = solution.removeCharacters(input);
-    
+
     cout << "Result after removing non-numeric characters: " << result << endl;
 
     return 0;
