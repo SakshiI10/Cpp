@@ -3,18 +3,22 @@
 #include <cctype>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    string toLower(string s) {
+    string toLower(string s)
+    {
         string result;
-        for(char ch: s){
+        for (char ch : s)
+        {
             result += tolower(ch);
         }
         return result;
     }
 };
 
-int main() {
+int main()
+{
     Solution sol; // Creating an instance of the Solution class
 
     // Example 1

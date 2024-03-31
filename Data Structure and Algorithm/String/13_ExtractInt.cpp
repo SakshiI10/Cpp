@@ -1,42 +1,53 @@
-//Code again
+// Code again
 
 #include <iostream>
 #include <vector>
 #include <string>
 using namespace std;
 
-vector<string> extractIntegerWords(string s) {
+vector<string> extractIntegerWords(string s)
+{
     vector<string> result;
     string currentInt;
 
-    for (char ch : s) {
-        if (isdigit(ch)) {
+    for (char ch : s)
+    {
+        if (isdigit(ch))
+        {
             currentInt.push_back(ch);
-        } else if (!currentInt.empty()) {
+        }
+        else if (!currentInt.empty())
+        {
             result.push_back(currentInt);
             currentInt.clear();
         }
     }
 
-    if (!currentInt.empty()) {
+    if (!currentInt.empty())
+    {
         result.push_back(currentInt);
     }
 
     return result;
 }
 
-int main() {
+int main()
+{
     string input;
     cout << "Enter a string: ";
     getline(cin, input);
 
     vector<string> integers = extractIntegerWords(input);
 
-    if (integers.empty()) {
+    if (integers.empty())
+    {
         cout << "No integers found in the string." << endl;
-    } else {
+    }
+    else
+    {
         cout << "Integers extracted from the string: ";
-        for (const string& integer : integers) {
+        for (const string &integer : integers)
+        {
             cout << integer << " ";
         }
         cout << endl;

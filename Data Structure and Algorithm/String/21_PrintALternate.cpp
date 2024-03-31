@@ -2,18 +2,22 @@
 #include <string>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    string delAlternate(string s) {
+    string delAlternate(string s)
+    {
         string result;
-        for (int i = 0; i < s.length(); i = i + 2) {
+        for (int i = 0; i < s.length(); i = i + 2)
+        {
             result.push_back(s[i]);
         }
         return result;
     }
 };
 
-int main() {
+int main()
+{
     Solution sol;
 
     // Example 1

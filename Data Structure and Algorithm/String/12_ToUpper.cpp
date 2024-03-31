@@ -3,15 +3,18 @@
 #include <cctype>
 using namespace std;
 
-string to_upper(string str){
+string to_upper(string str)
+{
     string result;
-    for(char ch: str){
+    for (char ch : str)
+    {
         result += toupper(ch);
     }
     return result;
 }
 
-int main() {
+int main()
+{
     // Example 1
     string str1 = "geeks";
     cout << "Input: " << str1 << endl;
