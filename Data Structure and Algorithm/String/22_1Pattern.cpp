@@ -8,7 +8,7 @@ public:
     {
         vector<string> result;
         for(int i = 0; i < s.length(); i++){
-            string pattern_line = "";
+            string pattern_line;
             for(int j = 0; j < s.length()-i; j++){
                 pattern_line += s[j];
             }
