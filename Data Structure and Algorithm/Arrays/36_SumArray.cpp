@@ -1,34 +1,38 @@
 #include <iostream>
+using namespace std;
 
-void SumArray(int arr[], int n) {
-    // Calculate the total sum
-    int totalSum = 0;
-    for (int i = 0; i < n; ++i) {
-        totalSum += arr[i];
-    }
+class Solution
+{
+public:
+    int SumArray(int arr[], int n)
+    {
+        // Calculate the total sum
+        int totalSum = 0;
+        for (int i = 0; i < n; ++i)
+        {
+            totalSum += arr[i];
+        }
 
-    // Output the sum array
-    for (int i = 0; i < n; ++i) {
-        std::cout << totalSum - arr[i];
-        if (i < n - 1) {
-            std::cout << " ";
+        // Output the sum array
+        for (int i = 0; i < n; ++i)
+        {
+            cout << totalSum - arr[i];
+            if (i < n - 1)
+            {
+                cout << " ";
+            }
         }
     }
-}
+};
 
-int main() {
-    int n;
-    std::cout << "Enter the size of the array: ";
-    std::cin >> n;
+int main()
+{
+    Solution sol;
+    int arr[] = {3, 6, 4, 8, 9};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    int arr[n];
-    std::cout << "Enter the elements of the array: ";
-    for (int i = 0; i < n; ++i) {
-        std::cin >> arr[i];
-    }
-
-    std::cout << "Sum Array: ";
-    SumArray(arr, n);
+    int result = sol.SumArray(arr, n);
+    cout << result;
 
     return 0;
 }
