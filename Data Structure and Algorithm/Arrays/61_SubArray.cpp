@@ -30,7 +30,7 @@ vector<int> findSubarrayWithGivenSum(const vector<int> &nums, int targetSum)
 
     return result; // If no subarray found
 }
-
+ 
 int main()
 {
     vector<int> nums = {1, 4, 20, 3, 10, 5};
