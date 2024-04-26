@@ -23,6 +23,7 @@ public:
 int main()
 {
     Solution sol;
+    
     int arr[] = {1, 2, 5, 5, 5, 6, 7, 8, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
     int x = 5;

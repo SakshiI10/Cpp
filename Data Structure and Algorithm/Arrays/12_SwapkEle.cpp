@@ -16,6 +16,7 @@ public:
 
 int main() {
     Solution sol;
+    
     vector<int> arr = {5, 3, 6, 1, 2};
     int n = arr.size();
     int k = 2;

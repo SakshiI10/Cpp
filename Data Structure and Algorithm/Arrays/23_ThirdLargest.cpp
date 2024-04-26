@@ -13,9 +13,11 @@ public:
     return sortedArr[n - 3];
   }
 };
+
 int main()
 {
   Solution sol;
+  
   int arr[] = {1, 2, 3, 4, 5, 7, 8};
   int n = sizeof(arr) / sizeof(arr[0]);
 

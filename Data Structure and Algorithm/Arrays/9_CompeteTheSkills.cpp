@@ -38,6 +38,7 @@ public:
 int main()
 {
     Solution solution;
+    
     long long A[] = {4, 2, 7};
     long long B[] = {5, 6, 3};
     int sizeA = sizeof(A) / sizeof(A[0]);

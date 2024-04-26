@@ -24,6 +24,7 @@ public:
 int main()
 {
     Solution sol;
+    
     vector<int> nums = {3, 2, 2, 3};
     int val = 2;
     int k = sol.removeElement(nums, val);

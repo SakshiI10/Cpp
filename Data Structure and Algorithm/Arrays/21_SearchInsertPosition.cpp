@@ -18,7 +18,6 @@ public:
 int main() {
     Solution solution;
 
-    // Example usage:
     vector<int> nums = {1, 3, 5, 6};
     int target = 4;
     int insertIndex = solution.searchInsert(nums, target);

@@ -6,8 +6,10 @@ using namespace std;
 
 int num(int a[], int n, int k)
 {
+    vector<int> result(a, a + n);
     int totalCount = 0;
-    for (int num : vector<int>(a, a + n))
+    
+    for (int num : result)
     {
         string numStr = to_string(num);
         totalCount += count(numStr.begin(), numStr.end(), '0' + k);

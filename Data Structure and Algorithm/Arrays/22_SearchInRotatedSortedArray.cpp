@@ -21,6 +21,7 @@ public:
 int main()
 {
     Solution sol;
+    
     vector<int> nums = {1, 3, 5, 6};
     int target = 5;
 
