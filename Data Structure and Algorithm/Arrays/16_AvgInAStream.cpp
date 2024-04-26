@@ -16,7 +16,6 @@ public:
             float average = sum / (i + 1);
             result.push_back(average);
         }
-
         return result;
     }
 };
@@ -26,7 +25,7 @@ int main()
     Solution solution;
 
     int n = 5;
-    int arr[] = {10, 20, 30, 40, 50};
+    int arr[] = {10, 20, 30, 40, 52};
 
     vector<float> result = solution.streamAvg(arr, n);
 
