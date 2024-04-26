@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
 
 vector<int> findElements(int a[], int n)
@@ -18,7 +17,7 @@ vector<int> findElements(int a[], int n)
     // Sort the vector in ascending order
     sort(sortedArr.begin(), sortedArr.end());
 
-    for (int i = 0; i < n - 2; i++)
+    for (int i = n-2; i < n ; i++)
     {
         result.push_back(sortedArr[i]);
         cout << sortedArr[i] << " ";

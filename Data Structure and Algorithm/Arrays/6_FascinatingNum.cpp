@@ -15,10 +15,10 @@ public:
 
         int n2 = n * 2;
         int n3 = n * 3;
-        string concatenatedStr = to_string(n) + to_string(n2) + to_string(n3);
+        string concStr = to_string(n) + to_string(n2) + to_string(n3);
 
         unordered_set<char> digitSet;
-        for (char digit : concatenatedStr)
+        for (char digit : concStr)
         {
             if (digit == '0' || digitSet.count(digit) > 0)
             {

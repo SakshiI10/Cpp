@@ -20,7 +20,7 @@ public:
 
 int main()
 {
-    int a[] = {1, 2, 3, 1, 1};
+    int a[] = {1, 2, 3, 2, 1};
     int n = sizeof(a) / sizeof(a[0]);
 
     Solution sol;
