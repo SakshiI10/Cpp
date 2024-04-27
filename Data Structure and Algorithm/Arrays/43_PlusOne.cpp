@@ -2,38 +2,48 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    vector<int> plusOne(vector<int>& digits) {
+    vector<int> plusOne(vector<int> &digits)
+    {
         int n = digits.size();
-        
+
         // Start from the least significant digit
-        for (int i = n - 1; i >= 0; --i) {
+        for (int i = n - 1; i >= 0; --i)
+        {
             // Increment the current digit
             digits[i]++;
-            
+
             // If there is no carry, return the result
-            if (digits[i] < 10) {
+            if (digits[i] < 10)
+            {
                 return digits;
-            } else {
+            }
+            else
+            {
                 // Carry over to the next digit
                 digits[i] %= 10;
             }
-        }  
+        }
         // If there is still a carry after the loop, insert a new digit at the beginning
         digits.insert(digits.begin(), 1);
         return digits;
     }
 };
 
-int main() {
+int main()
+{
     Solution solution;
+
     vector<int> digits1 = {1, 2, 3};
     vector<int> result1 = solution.plusOne(digits1);
-    cout << "Example 1 Result: [";
-    for (int digit : result1) {
+
+    cout << "Result: ";
+    for (int digit : result1)
+    {
         cout << digit << " ";
     }
-    cout << "]" << endl;
+    cout << endl;
     return 0;
 }

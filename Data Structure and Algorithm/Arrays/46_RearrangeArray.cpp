@@ -2,26 +2,35 @@
 #include <algorithm>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    void Rearrange(int a[], int n, int answer[]) {
+    void Rearrange(int a[], int n, int answer[])
+    {
         // Sort the input array in ascending order
         sort(a, a + n);
 
         // Initialize pointers for minimum and maximum elements
         int minPtr = 0, maxPtr = n - 1;
 
-        for (int i = 0; i < n; ++i) {
-            if (i % 2 == 0) {
-                answer[i] = a[minPtr++];
-            } else {
-                answer[i] = a[maxPtr--];
+        for (int i = 0; i < n; ++i)
+        {
+            if (i % 2 == 0)
+            {
+                answer[i] = a[minPtr];
+                minPtr++;
+            }
+            else
+            {
+                answer[i] = a[maxPtr];
+                maxPtr--;
             }
         }
     }
 };
 
-int main() {
+int main()
+{
     Solution solution;
 
     // Example 1
@@ -30,7 +39,8 @@ int main() {
     solution.Rearrange(arr1, 5, answer1);
 
     cout << "Example 1: ";
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 5; ++i)
+    {
         cout << answer1[i] << " ";
     }
     cout << endl;
@@ -41,7 +51,8 @@ int main() {
     solution.Rearrange(arr2, 4, answer2);
 
     cout << "Example 2: ";
-    for (int i = 0; i < 4; ++i) {
+    for (int i = 0; i < 4; ++i)
+    {
         cout << answer2[i] << " ";
     }
     cout << endl;

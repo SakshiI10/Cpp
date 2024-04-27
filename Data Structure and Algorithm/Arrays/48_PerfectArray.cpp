@@ -3,9 +3,10 @@
 #include <algorithm>
 using namespace std;
 
-bool isPerfect(const vector<int>& arr) {
+bool isPerfect(const vector<int> &arr)
+{
     int n = arr.size();
-    
+
     // Check for strictly increasing part
     int i = 1;
     while (i < n && arr[i] > arr[i - 1])
@@ -23,7 +24,8 @@ bool isPerfect(const vector<int>& arr) {
     return i == n;
 }
 
-int main() {
+int main()
+{
     vector<int> arr1 = {1, 8, 8, 8, 3, 2};
     vector<int> arr2 = {1, 1, 2, 2, 1};
 

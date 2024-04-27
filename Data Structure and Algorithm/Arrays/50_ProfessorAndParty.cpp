@@ -23,9 +23,11 @@ public:
 
 int main()
 {
+    Solution obj;
+
     int n = 5;
     long long a[] = {1, 2, 3, 4, 7};
-    Solution obj;
+    
     string result = obj.PartyType(a, n);
     cout << "The party is for: " << result << endl;
     return 0;
