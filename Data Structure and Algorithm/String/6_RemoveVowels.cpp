@@ -22,13 +22,12 @@ public:
 int main()
 {
     Solution solution;
-    string input;
 
+    string input;
     cout << "Enter a string: ";
     getline(cin, input); // Using getline to allow spaces in the input
 
     string result = solution.removeVowels(input);
-
     cout << "Result after removing vowels: " << result << endl;
 
     return 0;

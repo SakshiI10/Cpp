@@ -28,13 +28,12 @@ public:
 int main()
 {
     Solution solution;
-    string input;
 
+    string input;
     cout << "Enter a string: ";
     cin >> input;
 
     string result = solution.modify(input);
-
     cout << "Reversed vowels: " << result << endl;
 
     return 0;

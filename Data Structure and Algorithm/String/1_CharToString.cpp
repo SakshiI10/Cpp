@@ -19,6 +19,7 @@ public:
 int main()
 {
     Solution solution;
+    
     int n;
     cout << "Enter the size of the character array: ";
     cin >> n;

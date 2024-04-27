@@ -25,13 +25,12 @@ public:
 int main()
 {
     Solution solution;
-    int n;
 
+    int n;
     cout << "Enter an integer: ";
     cin >> n;
 
     string result = solution.is_palindrome(n);
-
     cout << "Is it a palindrome? " << result << endl;
 
     return 0;

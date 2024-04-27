@@ -23,6 +23,7 @@ public:
 int main()
 {
     Solution solution;
+    
     int n;
     cout << "Enter the number of names: ";
     cin >> n;

@@ -40,18 +40,17 @@ public:
         return result;
     }
 };
- */
+*/
 
 int main()
 {
     Solution solution;
-    string input;
 
+    string input;
     cout << "Enter a string: ";
     cin >> input;
 
     string result = solution.removeCharacters(input);
-
     cout << "Result after removing non-numeric characters: " << result << endl;
 
     return 0;

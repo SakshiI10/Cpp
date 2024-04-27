@@ -15,7 +15,6 @@ string to_upper(string str)
 
 int main()
 {
-    // Example 1
     string str1 = "geeks";
     cout << "Input: " << str1 << endl;
     string result1 = to_upper(str1);

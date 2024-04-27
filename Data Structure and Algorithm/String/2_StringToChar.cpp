@@ -20,6 +20,7 @@ public:
 int main()
 {
     Solution solution;
+    
     string inputString;
     cout << "Enter a string: ";
     cin >> inputString;
