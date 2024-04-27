@@ -34,5 +34,8 @@ int main()
     int n = sizeof(arr) / sizeof(arr[0]);
 
     vector<int> k = sol.countOddEven(arr, n);
+    cout << "Count of odd numbers: " << k[0] << endl;
+    cout << "Count of even numbers: " << k[1] << endl;
+    
     return 0;
 }

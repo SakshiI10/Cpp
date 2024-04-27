@@ -31,8 +31,7 @@ int main()
     int arr[] = {3, 6, 4, 8, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    int result = sol.SumArray(arr, n);
-    cout << result;
-
+    sol.SumArray(arr, n);
+    
     return 0;
 }

@@ -8,6 +8,7 @@ public:
     void reverseInGroups(vector<long long>& arr, int n, int k) {
         for (int i = 0; i < n; i += k) {
             int left = i;
+            // Ensure not to go beyond the array size
             int right = min(i + k - 1, n - 1);
 
             while (left < right) {
