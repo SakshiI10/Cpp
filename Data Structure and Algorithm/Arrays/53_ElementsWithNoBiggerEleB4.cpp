@@ -33,6 +33,7 @@ public:
 int main()
 {
     Solution sol;
+    
     long long arr1[] = {10, 40, 23, 35, 50, 7};
     long long n1 = sizeof(arr1) / sizeof(arr1[0]);
     vector<long long> result1 = sol.countElements(arr1, n1);

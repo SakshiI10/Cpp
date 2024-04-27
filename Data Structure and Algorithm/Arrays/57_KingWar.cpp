@@ -12,6 +12,7 @@ public:
         {
             return 0;
         }
+        
         sort(a, a + n);
 
         int strongest = 0, weakest = 0;
