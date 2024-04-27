@@ -33,6 +33,7 @@ public:
 int main()
 {
     Solution sol;
+    
     string S = "ab C";
     string output = sol.reciprocalString(S);
     cout << output << endl; // Output: "zy X"

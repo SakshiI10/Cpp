@@ -23,7 +23,6 @@ int main()
 {
     Solution solution;
 
-    // Test cases
     string input1 = "geeks  for geeks";
     string output1 = solution.modify(input1);
     cout << "Modified string 1: " << output1 << endl;

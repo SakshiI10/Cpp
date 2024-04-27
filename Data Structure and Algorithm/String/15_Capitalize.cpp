@@ -19,7 +19,7 @@ string transform(string s)
 
 int main()
 {
-    string str = "i love programming";
+    string str = "geeks for geeks";
     string result = transform(str);
     cout << result << endl; // Output: "I Love Programming"
     return 0;

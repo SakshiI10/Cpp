@@ -2,14 +2,17 @@
 #include <vector>
 using namespace std;
 
-class Solution{
-public: 
+class Solution
+{
+public:
     vector<string> pattern(string s)
     {
         vector<string> result;
-        for(int i = 0; i < s.length(); i++){
+        for (int i = 0; i < s.length(); i++)
+        {
             string pattern_line;
-            for(int j = 0; j < s.length()-i; j++){
+            for (int j = 0; j < s.length() - i; j++)
+            {
                 pattern_line += s[j];
             }
             result.push_back(pattern_line);
@@ -21,6 +24,7 @@ public:
 int main()
 {
     Solution solution;
+    
     string input = "GeeK";
     vector<string> result = solution.pattern(input);
 
