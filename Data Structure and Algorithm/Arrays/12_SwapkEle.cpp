@@ -2,10 +2,12 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    void swapKth(int n, int k, vector<int> &arr) {
-        int k1 = k - 1;  // Adjusting for 0-based indexing
+    void swapKth(int n, int k, vector<int> &arr)
+    {
+        int k1 = k - 1; // Adjusting for 0-based indexing
         int k2 = n - k;
 
         int temp = arr[k1];
@@ -14,15 +16,17 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     Solution sol;
-    
+
     vector<int> arr = {5, 3, 6, 1, 2};
     int n = arr.size();
     int k = 2;
-    
+
     cout << "Original array: ";
-    for (int num : arr) {
+    for (int num : arr)
+    {
         cout << num << " ";
     }
     cout << endl;
@@ -30,7 +34,8 @@ int main() {
     sol.swapKth(n, k, arr);
 
     cout << "Array after swapping kth elements: ";
-    for (int num : arr) {
+    for (int num : arr)
+    {
         cout << num << " ";
     }
     cout << endl;

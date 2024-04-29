@@ -2,16 +2,20 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
     // Function to reverse every sub-array group of size k.
-    void reverseInGroups(vector<long long>& arr, int n, int k) {
-        for (int i = 0; i < n; i += k) {
+    void reverseInGroups(vector<long long> &arr, int n, int k)
+    {
+        for (int i = 0; i < n; i += k)
+        {
             int left = i;
             // Ensure not to go beyond the array size
             int right = min(i + k - 1, n - 1);
 
-            while (left < right) {
+            while (left < right)
+            {
                 swap(arr[left], arr[right]);
                 left++;
                 right--;
@@ -20,7 +24,8 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     Solution solution;
 
     // Example
@@ -28,7 +33,8 @@ int main() {
     int n = 5, k = 2;
 
     cout << "Original Array: ";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
@@ -36,7 +42,8 @@ int main() {
     solution.reverseInGroups(arr, n, k);
 
     cout << "Array after reversing in groups of size " << k << ": ";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
