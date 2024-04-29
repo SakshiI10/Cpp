@@ -7,10 +7,10 @@ string reverseString(string s) {
     string result = "";
     unordered_set<char> seen;
 
-    for (char c : s) {
-        if (c != ' ' && seen.find(c) == seen.end()) {
-            result = c + result;
-            seen.insert(c);
+    for (int i = s.length() - 1; i >= 0; i--) {
+        if (s[i] != ' ' && seen.find(s[i]) == seen.end()) {
+            result += s[i];
+            seen.insert(s[i]);
         }
     }
 
