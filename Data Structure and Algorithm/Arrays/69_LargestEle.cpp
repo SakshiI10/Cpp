@@ -3,16 +3,19 @@
 #include <algorithm>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    int largest(vector<int> &arr, int n) {
+    int largest(vector<int> &arr, int n)
+    {
         vector<int> sortedArr(arr.begin(), arr.end());
         sort(sortedArr.begin(), sortedArr.end());
         return sortedArr[n - 1];
     }
 };
 
-int main() {
+int main()
+{
     // Example 1
     vector<int> A1 = {1, 8, 7, 56, 90};
     int n1 = 5;
