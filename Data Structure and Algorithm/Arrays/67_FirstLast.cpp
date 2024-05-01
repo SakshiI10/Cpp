@@ -29,8 +29,9 @@ public:
         {
             if (arr[i] == x)
             {
-                result[0] = firstIndex; // Update first occurrence index
-                result.push_back(i);    // Add last occurrence index
+                result.pop_back();            // Remove the initial -1
+                result.push_back(firstIndex); // Add first occurrence index
+                result.push_back(i);          // Add last occurrence index
                 break;
             }
         }
@@ -42,9 +43,9 @@ int main()
 {
     Solution sol;
 
-    vector<int> arr = { 1, 3, 3, 4 };
+    vector<int> arr = {1, 3, 3, 4};
     int n = arr.size();
-    int x = 3; 
+    int x = 3;
 
     vector<int> indices = sol.firstAndLast(arr, n, x);
     cout << "Indices of first and last occurrences of " << x << " are: ";
