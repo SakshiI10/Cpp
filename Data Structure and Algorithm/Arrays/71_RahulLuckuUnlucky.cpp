@@ -30,7 +30,7 @@ public:
         return count;
     }
 };
-
+ 
 int main()
 {
     Solution obj;
