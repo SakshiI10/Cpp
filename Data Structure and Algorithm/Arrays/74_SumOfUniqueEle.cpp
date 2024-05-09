@@ -13,7 +13,7 @@ public:
         for (int i = 0; i < n; i++)
         {
             if (unique.find(arr[i]) == unique.end())
-            {
+            {   
                 unique.insert(arr[i]);
                 sum += arr[i];
             }
