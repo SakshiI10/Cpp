@@ -13,7 +13,7 @@ string solve(string a)
         {
             result.push_back(ch);
         }
-    }
+    }  
 
     int count = unordered_set<char>(result.begin(), result.end()).size(); // Counting distinct consonants
 
